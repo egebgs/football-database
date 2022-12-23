@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Enroll a Team to a League</title>
+    <link rel="stylesheet" href="/style.css" />
+
+</head>
+
+<body>
+    <button onclick="history.back()">Go Back</button>
+
+    <form action="../components/insert_enrolls.php" method="POST">
+        <h2>Enroll Team:</h2>
+
+        <label for="fname">Team ID:</label><br>
+        <input type="text" id="tid" name="tid"><br>
+
+        <label for="fname">League:</label><br>
+        <input type="text" id="league" name="league"><br>
+
+        <input type="submit" value="Enroll">
+
+    </form>
+
+
+    <div class="column" style="flex: 50%;">
+        <a href="/components/table_enrolls.php">
+            <button>Enrolls Table
+            </button>
+        </a>
+    </div>
+</body>

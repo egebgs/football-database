@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add a Team to a Tournament</title>
+    <link rel="stylesheet" href="/style.css" />
+
+</head>
+
+<body>
+    <button onclick="history.back()">Go Back</button>
+
+    <h2>Add a Team to a Tournament</h2>
+
+    <div class="column" style="flex:50%">
+        <form action="../components/joins.php" method="POST">
+
+
+            <label for="fname"> Tournament Name:</label><br>
+            <input type="text" id="tournament" name="tournament"><br>
+
+            <label for="fname"> Team ID:</label><br>
+            <input type="text" id="tid" name="tid"><br>
+
+            <input type="submit" value="Add">
+
+        </form>
+    </div>
+
+</body>
